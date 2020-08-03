@@ -1,0 +1,25 @@
+.button-container{
+  visibility: hidden;
+  width: 100%;
+  display: flex;
+  position: relative;
+}
+
+.button{
+  visibility: hidden;
+  position: relative;
+}
+
+.subtract{
+  align-self: flex-start;
+  left: 5px;
+}
+
+.plus{
+  align-self: flex-end;
+  left: 50px;
+}
+
+.visible{
+  visibility: visible;
+}

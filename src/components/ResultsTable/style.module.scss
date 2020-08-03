@@ -1,0 +1,39 @@
+.container{
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.label{
+  font-weight: bold;
+  text-align: center;
+}
+
+.player-label{
+  color: blue;
+}
+
+.opponent-label{
+  color: red;
+}
+
+.tally{
+  padding: 50px 20px;
+}
+
+.cell{
+  border: solid 1px black;
+  background-color: gray;
+  height: 50px;
+  width: 50px;
+}
+
+.player{
+  background-color: blue;
+}
+
+.opponent{
+  background-color: red;
+}
+
+

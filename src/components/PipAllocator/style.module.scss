@@ -1,0 +1,102 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 500px;
+  margin-left: 20px;
+  overflow-x: hidden;
+}
+
+.dice-selector{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 25px;
+  img{
+    position: relative;
+    top: 10px;
+    box-sizing: border-box;
+    max-height: 50px;
+  }
+}
+
+.selected{
+  img{
+    outline: 4px solid;
+    outline-offset: 5px;
+  }
+}
+
+.player{
+  img{
+    outline-color: blue;
+  }
+}
+
+.opponent{
+  img{
+    outline-color: red;
+  }
+}
+
+.allocation-window{
+  background-color:green;
+  height: 400px;
+  // width: 2500px;
+
+}
+
+.initializeRow{
+  position: relative;
+  height: 400px;
+  width: 3000px;
+  display: flex;
+  flex-flow: nowrap;
+  // left: -550px;
+}
+
+
+.show4sidedDice{
+  animation: fourSided 0.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fourSided {
+  to {left: 0px;}
+}
+
+.show6sidedDice{
+  animation: sixSided 0.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes sixSided {
+  to {left: -550px;}
+}
+
+.show8sidedDice{
+  animation: eightSided 0.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes eightSided {
+  to {left: -1100px;}
+}
+
+.show12sidedDice{
+  animation: twelveSided 0.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes twelveSided {
+  to {left: -1650px;}
+}
+
+.show20sidedDice{
+  animation: twentySided 0.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes twentySided {
+  to {left: -2200px;}
+}

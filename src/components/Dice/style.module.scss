@@ -1,0 +1,79 @@
+.dice-selector{
+  position: relative;
+  height: 400px;
+  width: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.dice-face{
+  position: relative;
+  text-align: center;
+  font-weight: bold;
+  font-size: 50px;
+  height: 100px;
+  width: 100px;
+  border: solid 2px;
+  box-sizing: border-box;
+}
+
+.four {
+  padding: 100px 100px;
+  height: 200px;
+  width: 300px;
+}
+
+.six{
+  height: 300px;
+  width: 400px;
+  padding: 50px 100px;
+
+  .dice-face{
+    top: 100px;
+  }
+
+  .fourFace{
+    top: 0;
+    left: -200px;
+  }
+
+  .fiveFace{
+    top: 50px;
+    left: 100px;
+  }
+
+  .sixFace{
+    top: -50px;
+    left: 100px;
+  }
+}
+
+.eight{
+  height: 200px;
+  width: 400px;
+  padding: 100px 40px;
+
+  .fiveFace, .sixFace, .sevenFace, .eightFace{
+    top: 0;
+  }
+}
+
+.twelve{
+  height: 300px;
+  width: 450px;
+  padding: 50px 70px 50px 100px;
+}
+
+.twenty{
+  height: 400px;
+}
+
+
+.player{
+  background-color: skyblue;
+}
+
+.opponent{
+  background-color: red;
+}

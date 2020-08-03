@@ -1,0 +1,22 @@
+.clickable{
+  height: 100px;
+  width: 100px;
+  border: 1px solid black;
+}
+
+.allocator-container{
+  display: flex;
+}
+
+.label{
+  text-align: center;
+  font-weight: bold;
+
+  &.red-player{
+    color: red;
+  }
+
+  &.blue-player{
+    color: blue;
+  }
+}
