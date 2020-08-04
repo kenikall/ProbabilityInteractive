@@ -1,6 +1,6 @@
 Mannah Kallon's Probability Interactive
 
-## Available Scripts
+## Running the App
 
 To run this interactive enter the following command in the project directory:
 
@@ -9,11 +9,9 @@ To run this interactive enter the following command in the project directory:
 Runs the app in the development mode.<br />
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## Interactive Proposal
 
-### `yarn test`
+[Link to the word doc proposal](https://docs.google.com/document/d/1eEFpiDEU-6J_59YRBc1ef7T-T3kJzbNnNJtMnG-3vRY/edit?usp=sharing).
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
 
