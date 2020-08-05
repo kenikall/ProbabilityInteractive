@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames/bind';
 import styles from './style.module.scss';
@@ -40,7 +40,7 @@ function Dice({
     twenty: 20,
   }
   const [active, setActive] = useState(null)
-  const [faces, setFaces] = useState([
+  const faces = [
     {faceName: "oneFace", faceNumber: 1},
     {faceName: "twoFace", faceNumber: 2},
     {faceName: "threeFace", faceNumber: 3},
@@ -61,7 +61,7 @@ function Dice({
     {faceName: "eighteenFace", faceNumber: 18},
     {faceName: "nineteenFace", faceNumber: 19},
     {faceName: "twentyFace", faceNumber: 20, breakLoop: 'twenty'},
-  ])
+  ]
 
   return(
     <div

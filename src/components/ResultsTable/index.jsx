@@ -7,9 +7,20 @@ import { diceValues } from '../helpers'
 const cx = classnames.bind(styles);
 
 const propTypes = {
-};
-
-const defaultProps = {
+  playerDice: PropTypes.shape({
+    four: PropTypes.object,
+    six: PropTypes.object,
+    eight: PropTypes.object,
+    twelve: PropTypes.object,
+    twenty: PropTypes.object,
+  }).isRequired,
+  opponentDice: PropTypes.shape({
+    four: PropTypes.object,
+    six: PropTypes.object,
+    eight: PropTypes.object,
+    twelve: PropTypes.object,
+    twenty: PropTypes.object,
+  }).isRequired,
 };
 
 function ResultsTable({playerDice, opponentDice}) {
@@ -87,7 +98,6 @@ function ResultsTable({playerDice, opponentDice}) {
   );
 }
 
-ResultsTable.defaultProps = defaultProps;
 ResultsTable.propTypes = propTypes;
 
 export default ResultsTable;
