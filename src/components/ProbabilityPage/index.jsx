@@ -15,13 +15,13 @@ function ProbababilityPage() {
     twelve: initializePlayerDice(12),
     twenty: initializePlayerDice(20),
   })
-  const opponentDiceSet = {
+  const [opponentDiceSet, setOpponentDiceSet] = useState({
     four: initializeOpponentDice(4),
     six: initializeOpponentDice(6),
     eight: initializeOpponentDice(8),
     twelve: initializeOpponentDice(12),
     twenty: initializeOpponentDice(20),
-  }
+  })
   const [activePlayerDice, setActivePlayerDice] = useState('six')
   const [activeOpponentDice, setActiveOpponentDice] = useState('six')
   const [reservePips, setReservePips] = useState(playerDiceSet[activePlayerDice].reservePips)
