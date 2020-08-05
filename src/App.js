@@ -8,7 +8,9 @@ function App() {
   app.set('port', process.env.PORT || 3000);
   const port = app.get('port')
 
+  console.log('*****')
   console.log(`Express server listening on port ${port}`);
+  console.log('*****')
 
   app.listen(port);
 
