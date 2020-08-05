@@ -4,11 +4,11 @@ import ProbababilityPage from './components/ProbabilityPage'
 import './App.css';
 
 function App() {
+  console.log('*****')
   const app = express();
   app.set('port', process.env.PORT || 3000);
   const port = app.get('port')
 
-  console.log('*****')
   console.log(`Express server listening on port ${port}`);
   console.log('*****')
 
