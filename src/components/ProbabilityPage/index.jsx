@@ -1,9 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import classnames from 'classnames/bind';
 import styles from './style.module.scss';
+import BetterDiceButton from '../BetterDiceButton'
 import PipAllocator from '../PipAllocator'
 import ResultsTable from '../ResultsTable'
-import { initializePlayerDice, initializeOpponentDice } from '../helpers'
+import { betterDice, initializePlayerDice, initializeOpponentDice } from '../helpers'
 
 const cx = classnames.bind(styles);
 
@@ -25,10 +26,20 @@ function ProbababilityPage() {
   const [activePlayerDice, setActivePlayerDice] = useState('six')
   const [activeOpponentDice, setActiveOpponentDice] = useState('six')
   const [reservePips, setReservePips] = useState(playerDiceSet[activePlayerDice].reservePips)
+  const [updateDice, setUpdateDice] = useState(false)
+
+  useEffect(() => {
+    setOpponentDiceSet(betterDice(playerDiceSet[activePlayerDice], opponentDiceSet, activeOpponentDice))
+    setUpdateDice(false)
+  }, [updateDice]);
 
   return (
     <div>
       <p> {`Reserve Pips for the ${activePlayerDice}-sided dice: ${reservePips}`} </p>
+      <BetterDiceButton
+        setUpdateDice={setUpdateDice}
+        show={activePlayerDice === activeOpponentDice}
+      />
       <div className={cx('allocator-container')}>
         <PipAllocator
           setActiveDice={setActivePlayerDice}

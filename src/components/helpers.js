@@ -52,3 +52,23 @@ export function diceValues(dice){
 
   return values.sort((a,b) => a-b)
 }
+
+export function betterDice(dice, diceSet, currentDice){
+  let availiblePips = dice.totalPips
+  let newDice = {}
+
+  diceValues(dice).forEach((value, index) => {
+    const potentialValue = value + 1
+    if((availiblePips - potentialValue) > 0){
+      newDice[faceNames[index + 1]] = potentialValue
+      availiblePips -= potentialValue
+    } else {
+      newDice[faceNames[index + 1]] = availiblePips
+      availiblePips = 0
+    }
+  })
+
+  diceSet[currentDice] = newDice
+  console.log(diceSet)
+  return diceSet
+}

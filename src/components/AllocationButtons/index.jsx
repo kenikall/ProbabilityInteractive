@@ -9,7 +9,8 @@ const cx = classnames.bind(styles);
 const propTypes = {
   active: PropTypes.bool,
   diceName: PropTypes.oneOf(['four', 'six', 'eight', 'twelve', 'twenty']).isRequired,
-  face: PropTypes.oneOf([  'oneFace', 'twoFace', 'threeFace', 'fourFace', 'fiveFace',
+  face: PropTypes.oneOf([
+    'oneFace', 'twoFace', 'threeFace', 'fourFace', 'fiveFace',
     'sixFace', 'sevenFace', 'eightFace', 'nineFace', 'tenFace',
     'elevenFace', 'twelveFace', 'thirteenFace', 'fourteenFace',
     'fifteenFace', 'sixteenFace', 'seventeenFace', 'eighteenFace',
