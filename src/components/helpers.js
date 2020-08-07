@@ -69,6 +69,6 @@ export function betterDice(dice, diceSet, currentDice){
   })
 
   diceSet[currentDice] = newDice
-  console.log(diceSet)
+
   return diceSet
 }
